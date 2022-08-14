@@ -39,6 +39,34 @@ p {
   opacity: 70%;
 }
 
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--paragraph-color);
+  opacity: 70;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
+.logo {
+  max-height: 40px;
+}
 .hero {
   background: var(--default-color);
   text-align: center;
