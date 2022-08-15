@@ -31,7 +31,7 @@ h2 {
   font-size: 64px;
 }
 
-h4{
+h4 {
   font-size: 48px;
   line-height: 64px;
 }
@@ -45,7 +45,11 @@ p {
 }
 
 nav {
-  padding: 20px 0;
+  padding: 10px 90px;
+  background: white;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+  font-family: var(--default-font-family);
+  font-weight: 500;
 }
 nav ul {
   padding: 0;
@@ -110,7 +114,7 @@ footer .social-links a:hover {
 .hero {
   background: var(--default-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 140px 20px;
 }
 
 .hero h2 {
@@ -123,7 +127,7 @@ footer .social-links a:hover {
 .hero p {
   font-size: 36px;
   font-weight: bold;
-  margin: 0;
+  margin: 20px;
   opacity: 100%;
 }
 
@@ -136,6 +140,11 @@ footer .social-links a:hover {
   padding: 15px 30px;
 }
 
+.btn-branding:hover {
+  background: var(--branding-color);
+  color: #fff;
+}
+
 .btn-branding-outline {
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
@@ -145,20 +154,25 @@ footer .social-links a:hover {
   padding: 18px 30px;
 }
 
+.btn-branding-outline:hover {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+}
+
 .project-description {
   padding: 120px 60px;
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 140px 20px 10px;
 }
 .content {
   margin: 30px 0;
 }
 
 .content h1 {
-  font-size: 64px;
-  line-height: 74px;
+  font-size: 50px;
+  line-height: 60px;
 }
 
 .content h2 {
@@ -182,6 +196,9 @@ footer .social-links a:hover {
   display: block;
   margin: 0 auto;
 }
+.coder {
+  color: black;
+}
 
 @media (max-width: 900px) {
   h1 {
@@ -192,9 +209,20 @@ footer .social-links a:hover {
   h2 {
     font-size: 44px;
   }
+  nav {
+    padding: 10px 20px;
 
+  }
+  footer .email-link {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
   .hero {
-    padding: 80px 20px;
+    padding: 130px 20px 80px;
   }
 
   .project-description {
@@ -203,11 +231,11 @@ footer .social-links a:hover {
   }
   .content-container {
     text-align: center;
-    padding: 0;
+    padding: 80px 20px 0;
   }
 
   .content h1 {
-    font-size: 44px;
+    font-size: 34px;
     line-height: 1.5;
   }
 }
